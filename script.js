@@ -2,14 +2,12 @@
 
 const navbarElems = document.querySelectorAll(".nav_item");
 
-// console.log(navbarElems);
-
 document.addEventListener("click", function (e) {
+  const current = document.querySelector(".selected"); // currently selected navbar link (if defined)
+  current?.firstChild && current.classList.remove("selected");
   navbarElems.forEach((x) => {
-    // console.log(e.target);
-    // console.log(x.firstChild);
     if (e.target == x.firstChild) {
-      x.classList.add("selected");
+      return x.firstChild.classList.add("selected");
     }
   });
 });
