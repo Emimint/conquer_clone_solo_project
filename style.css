@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    /* border: solid 10px; */
+}
+
+nav {
+    /* list-style: none; */
+    display: flex;
+    padding: 0 20px;
+    /* border-style: solid; */
+    border: 2px solid blueviolet;
+    background-color: rgb(43, 226, 107);
+}
