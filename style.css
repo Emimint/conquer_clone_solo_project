@@ -57,3 +57,10 @@ nav a {
 .selected {
   background-color: #49505f;
 }
+
+/* "Scrolling back up" component: */
+.fixed {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
