@@ -59,15 +59,21 @@ nav a {
   background-color: #49505f;
 }
 
-/* "Scrolling back up" component: */
+/* "Scrolling back up" components: */
 .fixed {
-  display: none;
+  opacity: 0;
+  transition: all 1s ease;
   cursor: pointer;
   position: fixed;
   z-index: 99;
   bottom: 3%;
   right: 2%;
 }
+
+.dimming {
+  opacity: 1;
+}
+
 
 /* Parallax mirror effect: */
 

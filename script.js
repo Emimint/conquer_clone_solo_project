@@ -3,9 +3,8 @@
 const navbar = document.querySelector("nav");
 const navbarElems = document.querySelectorAll(".nav_item");
 const scrollBackButton = document.querySelector(".fixed");
-
-console.log(navbar);
-console.log(navbarElems);
+const scrollBackButtonTop = scrollBackButton.getBoundingClientRect().top;
+const section1 = document.getElementById("section1");
 
 /* "Navbar" interaction function: */
 navbar.addEventListener("click", function (e) {
@@ -18,10 +17,20 @@ navbar.addEventListener("click", function (e) {
   });
 });
 
-
-
 /* "Scrolling back up" function: */
 scrollBackButton.addEventListener("click", function () {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 });
+
+/* "Scrolling back up" button animation: */
+window.onscroll = function () {
+  if (
+    document.body.scrollTop > scrollBackButtonTop * 0.7 ||
+    document.documentElement.scrollTop > scrollBackButtonTop * 0.7
+  ) {
+    scrollBackButton.classList.add("dimming"); // toggle opacity
+  } else {
+    scrollBackButton.classList.remove("dimming");
+  }
+};
