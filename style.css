@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   border: 0;
+  box-sizing: border-box;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
@@ -60,9 +61,35 @@ nav a {
 
 /* "Scrolling back up" component: */
 .fixed {
+  display: none;
   cursor: pointer;
   position: fixed;
   z-index: 99;
   bottom: 3%;
   right: 2%;
+}
+
+/* Parallax mirror effect: */
+
+.parallax {
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#section1 {
+  background-image: url("img/bg-1.jpg");
+}
+
+.service {
+  background-image: url("img/bg-2.jpg");
+}
+
+#section4 {
+  background-image: url("img/bg-3.jpg");
 }
