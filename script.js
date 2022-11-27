@@ -1,14 +1,16 @@
 "use strict";
 
+const navbar = document.querySelector("nav");
 const navbarElems = document.querySelectorAll(".nav_item");
 const scrollBackButton = document.querySelector(".fixed");
 
+console.log(navbar);
+console.log(navbarElems);
 
-/* "NAVBAR" interaction function: */
-// TO BE FIXED!!!
-document.addEventListener("click", function (e) {
-  const current = document.querySelector(".selected"); // currently selected navbar link (if defined)
-  current?.firstChild && current.classList.remove("selected");
+/* "Navbar" interaction function: */
+navbar.addEventListener("click", function (e) {
+  const current = document.querySelector(".selected"); // currently selected navbar link (default: Homepage)
+  current.firstChild && current.classList.remove("selected");
   navbarElems.forEach((x) => {
     if (e.target == x.firstChild) {
       return x.firstChild.classList.add("selected");
