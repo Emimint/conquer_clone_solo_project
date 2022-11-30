@@ -118,6 +118,13 @@ h4 {
   background-image: url("img/bg-3.jpg");
 }
 
+/* Image default format: */
+img {
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
+
 /* Simple Responsive Framework. */
 .row {
   width: 100%;
@@ -257,7 +264,7 @@ h4 {
 }
 
 /********** Small devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 767px) {
   .col-sm-1,
   .col-sm-2,
   .col-sm-3,
