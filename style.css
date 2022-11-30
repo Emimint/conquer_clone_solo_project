@@ -41,11 +41,6 @@ nav li {
   /* padding: 10px; */
 }
 
-nav a:hover {
-  transition: all 0.3s ease;
-  background-color: #49505f;
-}
-
 nav a {
   color: azure;
   text-align: center;
@@ -56,7 +51,8 @@ nav a {
 }
 
 .selected {
-  background-color: #49505f;
+  background-color: #383e4c;
+  filter: brightness(120%);
 }
 /****************************************/
 
@@ -174,6 +170,11 @@ p > a {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     text-align: center;
+}
+
+.brighter-btn:hover {
+  transition: filter 0.3s ease;
+  filter: brightness(120%);
 }
 
 .green-btn {
