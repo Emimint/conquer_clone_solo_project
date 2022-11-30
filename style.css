@@ -195,6 +195,18 @@ p > a {
   filter: brightness(90%);
 }
 
+.send-btn {
+  color: #ffffff;
+  background-color: #262628;
+  border: solid 0.3px #cccccc;
+}
+
+.send-btn:hover {
+  transition: all 0.3s ease;
+  color: #262628;
+  background-color: #ffffff;
+}
+
 .green-btn {
   background: #178a27;
 }
