@@ -159,6 +159,35 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+
+p > a {
+  color: #23527c;
+}
+
+.feature-content-link {
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: capitalize;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.green-btn {
+    background: #178A27;
+}
+
+.blue-btn {
+    background: #1686C1;
+}
+
+.red-btn {
+    background: #852406;
+}
+
 /****************************************/
 
 /* Simple Responsive Framework. */
