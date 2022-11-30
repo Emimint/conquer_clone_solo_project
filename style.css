@@ -10,6 +10,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  color: #666666;
+}
+
 /* NAVIGATION BAR */
 
 nav {
@@ -50,6 +54,11 @@ nav a {
   background-color: #383e4c;
 }
 
+nav a:hover {
+  transition: filter 0.3s ease;
+  filter: brightness(120%);
+}
+
 .selected {
   background-color: #383e4c;
   filter: brightness(120%);
@@ -72,7 +81,6 @@ h4 {
 }
 /****************************************/
 
-
 /* "Scrolling back up" components: */
 .fixed {
   opacity: 0;
@@ -88,7 +96,6 @@ h4 {
   opacity: 1;
 }
 /****************************************/
-
 
 /* Parallax mirror effect: */
 .parallax {
@@ -119,7 +126,6 @@ h4 {
 }
 /****************************************/
 
-
 /* Image default format: */
 img {
   max-width: 100%;
@@ -130,15 +136,14 @@ img {
 
 /* Columns general formatting: */
 .container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .feature-content {
   background-color: #f2f2f2;
-  color: #333;
 }
 
 h2 {
@@ -149,44 +154,57 @@ h2 {
 }
 
 p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 p > a {
   color: #23527c;
 }
 
-.feature-content-link {
-    border-radius: 5px;
-    color: #fff;
-    font-size: 18px;
-    padding: 10px 30px;
-    text-decoration: none;
-    text-transform: capitalize;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    text-align: center;
+.general-link {
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: center;
 }
 
-.brighter-btn:hover {
+.feature-content-link {
+  color: #fff;
+}
+
+.feature-content-link:hover {
   transition: filter 0.3s ease;
   filter: brightness(120%);
 }
 
+.content-link {
+  color: #666666;
+  background-color: #ffffff;
+  border: solid 0.3px #cccccc;
+}
+
+.content-link:hover {
+  transition: all 0.3s ease;
+  color: #23527c;
+  filter: brightness(90%);
+}
+
 .green-btn {
-    background: #178A27;
+  background: #178a27;
 }
 
 .blue-btn {
-    background: #1686C1;
+  background: #1686c1;
 }
 
 .red-btn {
-    background: #852406;
+  background: #852406;
 }
 
 /****************************************/
