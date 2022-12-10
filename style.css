@@ -16,7 +16,8 @@ body {
 
 section {
   display: flex;
-  margin: 0px 0.5rem;
+  width: 100%;
+  justify-content: center;
 }
 
 /* NAVIGATION BAR */
@@ -130,7 +131,7 @@ h4 {
   line-height: 1.1;
 }
 
-.service {
+#services-area {
   background-image: url("img/bg-2.jpg");
 }
 
@@ -191,12 +192,13 @@ p > a {
 }
 
 .general-link {
+  align-self: center;
   border-radius: 5px;
-  font-size: 18px;
-  padding: 10px 30px;
+  font-size: 1.1em;
+  padding: 0.5em 1.5em;
+  margin: 1em;
   text-decoration: none;
   text-transform: capitalize;
-  text-align: center;
 }
 
 .feature-content-link {
@@ -242,6 +244,16 @@ p > a {
 
 .red-btn {
   background: #852406;
+}
+
+/* Testimonial area formatting: */
+
+.text-center {
+  display: flex;
+}
+
+.container .text-center {
+  align-items: stretch;
 }
 
 /****************************************/
