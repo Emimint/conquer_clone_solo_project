@@ -1,0 +1,38 @@
+Website structure:
+
+{nav elem}
+	0) Nav bar (almost done; I miss the mobile version - to be done later) 
+
+{div id section1 > header elem}
+	1) homepage /section 1 (same across all viewports): span entire screen (parallax) 
+
+{div id section2 > header elem}
+2) About section: 3 columns:
+	- in row (large to medium screen)
+	- in column (smaller devices)
+
+3) About section part 2: 2 columns
+	- in row (large to medium screen)
+	- in column (smaller devices)
+
+4) service section (same across all viewports): span entire screen (parallax)
+
+5) service section part 2: 4 columns:
+	- in a single row (large devices)
+	- in 2 rows of 2 (medium screen)
+	- in column (smaller devices)
+
+6) service section part 3: (same across all viewports): span entire screen
+
+7) contact section: formspan entire screen (parallax):
+	- one text div (always on one row)
+	- one form with 4 inputs: Name, Email, Subject (first div) and Text with button (second div):
+		- first three are in columns then Text in on same row ( ==> one block of 3 on left, text on right)
+		- first three are in columns then Text in on same row (==> one block of 3 on top,text at bottom)
+
+8) footer section: span entire screen (same across all viewports)
+
+=====================
+
+All 8 sections are in column and are independant.
+
