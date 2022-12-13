@@ -24,10 +24,10 @@ section {
 
 nav {
   background-color: #383e4c;
-  padding: 10px;
+  padding: 0.5rem;
   font-size: 1rem;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   margin-right: auto;
   margin-left: auto;
   position: -webkit-sticky;
@@ -38,7 +38,7 @@ nav {
 nav ul {
   white-space: nowrap;
   display: flex;
-  margin: 15px;
+  margin: 0.75rem;
   justify-content: center;
   /* padding: 10px; */
 }
@@ -47,14 +47,14 @@ nav li {
   list-style: none;
   font-size: 1.2rem;
   display: inline-block;
-  margin: 8px;
+  margin: 0.5rem;
   /* padding: 10px; */
 }
 
 nav a {
   color: azure;
   text-align: center;
-  padding: 18px;
+  padding: 1rem;
   text-decoration: none;
   border: 1px solid #596170;
   background-color: #383e4c;
@@ -124,6 +124,9 @@ h4 {
 }
 
 #section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url("img/bg-1.jpg");
   text-align: center;
   padding: 15% 0;
