@@ -85,13 +85,6 @@ h4 {
   font-weight: lighter;
   text-shadow: 1px 1px #000;
 }
-/****************************************/
-
-/* Service section formatting: */
-
-.tm-box {
-  clear: both;
-}
 
 /****************************************/
 
@@ -152,13 +145,6 @@ img {
 /****************************************/
 
 /* Columns general formatting: */
-.container {
-  padding-right: 0.75rem;
-  padding-left: 0.75rem;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-  margin-top: 3.5rem;
-}
 
 .feature-content {
   display: flex;
@@ -249,22 +235,18 @@ p > a {
   background: #852406;
 }
 
-/* Testimonial area formatting: */
 
-.text-center {
-  display: flex;
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid #eee;
 }
 
-.container .text-center {
-  align-items: stretch;
-}
 
 /****************************************/
 
 /* Simple Responsive Framework. */
-.row {
-  width: 100%;
-}
 
 /********** Large devices only **********/
 @media (min-width: 992px) {
