@@ -1,36 +1,55 @@
 Website structure:
 
-{nav elem}
+{nav element}
 	0) Nav bar (almost done; I miss the mobile version - to be done later) 
 
-{div id section1 > header elem}
-	1) homepage /section 1 (same across all viewports): span entire screen (parallax) 
+{div id="section1" > header id="header-area"}
+	1) homepage /section 1 (same across all viewports): span entire screen (parallax on div id="section1") 
 
-{div id section2 > header elem}
+{div id="section2" > section id="feature-area"}
 2) About section: 3 columns:
 	- in row (large to medium screen)
 	- in column (smaller devices)
 
+{div id="section2" > section id="blog-area"}
 3) About section part 2: 2 columns
 	- in row (large to medium screen)
 	- in column (smaller devices)
 
+{div id="section3" > id="service-area"}
 4) service section (same across all viewports): span entire screen (parallax)
 
+
+{div id="section3" > id="testimonial-area"}
 5) service section part 2: 4 columns:
 	- in a single row (large devices)
 	- in 2 rows of 2 (medium screen)
 	- in column (smaller devices)
 
-6) service section part 3: (same across all viewports): span entire screen
 
+{div id="section3" > id="big-column"}
+6)still part of the testimonial section (same across all viewports): span entire screen
+
+{div id="section4" > id="contact-area"}
 7) contact section: formspan entire screen (parallax):
+	
+	{class="contact-content"}
 	- one text div (always on one row)
-	- one form with 4 inputs: Name, Email, Subject (first div) and Text with button (second div):
-		- first three are in columns then Text in on same row ( ==> one block of 3 on left, text on right)
-		- first three are in columns then Text in on same row (==> one block of 3 on top,text at bottom)
+	{form elem}
+	- one form with 4 inputs (first three are in columns then Text in on same row):
+		{class="contact-form-left"}
+		Name, Email, Subject (first div) and 
+		{class="contact-form-right"}
+		Text with button (second div):
+		- one block of 3 on left, text on right (large and medium devices)
+		- one block of 3 on top,text at bottom (small devices)
 
-8) footer section: span entire screen (same across all viewports)
+{footer element id="footer-area"}
+8) footer section: span entire screen (same across all viewports), with:
+	{class="contact-content"}
+	- some text in <h1> and <p>
+	{class="copy"}
+	- <p> with copyright info
 
 =====================
 
