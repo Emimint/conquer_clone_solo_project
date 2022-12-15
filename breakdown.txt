@@ -16,21 +16,21 @@ Website structure:
 	- in row (large to medium screen)
 	- in column (smaller devices)
 
-{div id="section3" > id="service-area"}
+{div id="section3" >  section id="service-area"}
 4) service section (same across all viewports): span entire screen (parallax)
 
 
-{div id="section3" > id="testimonial-area"}
+{div id="section3" > section id="testimonial-area"}
 5) service section part 2: 4 columns:
 	- in a single row (large devices)
 	- in 2 rows of 2 (medium screen)
 	- in column (smaller devices)
 
 
-{div id="section3" > id="big-column"}
+{div id="section3" > section id="big-column"}
 6)still part of the testimonial section (same across all viewports): span entire screen
 
-{div id="section4" > id="contact-area"}
+{div id="section4" > section id="contact-area"}
 7) contact section: formspan entire screen (parallax):
 	
 	{class="contact-content"}
