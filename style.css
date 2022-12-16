@@ -4,6 +4,7 @@
   border: 0;
   box-sizing: border-box;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
 }
 
 html {
@@ -18,6 +19,8 @@ section {
   display: flex;
   width: 100%;
   justify-content: center;
+  padding: 0.1rem;
+  margin: auto;
 }
 
 /* NAVIGATION BAR */
@@ -25,7 +28,7 @@ section {
 nav {
   background-color: #383e4c;
   padding: 0.5rem;
-  font-size: 1rem;
+  /* font-size: 1rem; */
   padding-right: 1rem;
   padding-left: 1rem;
   margin-right: auto;
@@ -45,7 +48,7 @@ nav ul {
 
 nav li {
   list-style: none;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   display: inline-block;
   margin: 0.5rem;
   /* padding: 10px; */
@@ -149,7 +152,7 @@ img {
 .feature-content {
   display: flex;
   flex-direction: column;
-  margin: 1rem;
+  margin: 2rem;
   background-color: #f2f2f2;
 }
 
@@ -169,7 +172,6 @@ h2 {
 }
 
 p {
-  font-size: 0.85rem;
   margin-block-start: 1em;
   margin-block-end: 1em;
   padding: 0 1rem 1.75rem;
@@ -183,11 +185,24 @@ p > a {
 .general-link {
   align-self: center;
   border-radius: 5px;
-  font-size: 1.1em;
   padding: 0.5em 1.5em;
   margin: 1em;
   text-decoration: none;
   text-transform: capitalize;
+}
+
+/* Links positioning: */
+
+a.general-link.content-link {
+  align-self: end;
+}
+
+#testimonial-area a.general-link.content-link {
+  align-self: center;
+}
+
+#big-column a.general-link.content-link {
+  align-self: start;
 }
 
 .feature-content-link {
@@ -240,10 +255,6 @@ hr {
   margin-bottom: 1rem;
   border: 0;
   border-top: 1px solid #eee;
-}
-
-.cols {
-  display: flex;
 }
 
 /****************************************/
@@ -360,12 +371,13 @@ hr {
     /* background: red; */
   }
 
-  [class*="col-"] {
+  /* [class*="col-"] {
     width: 100%;
-  }
+  } */
 
    section {
     flex-direction: column;
+    padding-top: 5rem;
   }
 
   nav {
@@ -505,11 +517,11 @@ hr {
     /* background: pink; */
   }
 
-  [class*="col-"] {
+  /* [class*="col-"] {
     width: 33.33%;
-  }
+  } */
 
-  section {
+  /* section {
     flex-direction: row;
-  }
+  } */
 }
