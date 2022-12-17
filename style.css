@@ -207,6 +207,7 @@ a.general-link.content-link {
 
 .feature-content-link {
   color: #fff;
+  margin-bottom: 2rem;
 }
 
 .feature-content-link:hover {
@@ -244,9 +245,19 @@ a.general-link.content-link {
   background: #178a27;
 }
 
+.green-text {
+  color:#178a27;
+}
+
 .blue-btn {
   background: #1686c1;
 }
+
+.blue-text {
+  color:#1686c1;
+}
+
+
 
 .red-btn {
   background: #852406;
