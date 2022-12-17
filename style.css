@@ -313,7 +313,7 @@ textarea {
 
 #contact-area h2 {
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-transform: capitalize;
   font-weight: 500;
   text-shadow: 0.2rem 0.2rem black;
@@ -344,6 +344,27 @@ form {
 
 .contact-form-right {
   grid-template-rows: 3fr 2fr;
+}
+
+/****************************************/
+
+/* Footer section formatting: */
+
+footer {
+  text-align: center;
+}
+
+.footer-content {
+  font-style: italic;
+}
+
+.footer-content h2 {
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+
+.footer-content p {
+  color: #9a9a9a;
 }
 
 /****************************************/
