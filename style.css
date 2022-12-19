@@ -19,8 +19,8 @@ section {
   display: flex;
   width: 100%;
   justify-content: center;
-  padding: 0.1rem;
-}
+  padding: 2rem;
+} 
 
 /* NAVIGATION BAR */
 
@@ -398,6 +398,7 @@ footer {
 
   section {
     flex-direction: column;
+    /* align-items: center; */
     padding-top: 5rem;
   }
 
