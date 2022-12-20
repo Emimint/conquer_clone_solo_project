@@ -443,19 +443,7 @@ footer {
   }
 }
 
-@media (min-width: 769px) and (max-width: 991px),
-(max-width: 767px) and (orientation: landscape) {
-  #testimonial-area {
-    width: 90%;
-    justify-content: space-between;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-  }
 
-  #testimonial-area img {
-    height: 40%;
-  }
-}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -513,7 +501,7 @@ footer {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 480px) and (max-width: 767px),
+@media screen and (min-width: 480px) and (max-width: 767px),
   only screen and (max-width: 480px) {
   [class*="col-"] {
     width: 100%;
@@ -568,5 +556,19 @@ footer {
   button.general-link.send-btn {
     margin-top: 1rem;
     align-self: flex-start;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px),
+(max-width: 767px) and (orientation: landscape) {
+  #testimonial-area {
+    width: 90%;
+    justify-content: space-between;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  #testimonial-area img {
+    height: 40%;
   }
 }
