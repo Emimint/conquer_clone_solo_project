@@ -25,22 +25,23 @@ section {
 
 nav {
   background-color: #383e4c;
-  /* padding: 0.5rem; */
-  /* font-size: 1rem; */
   position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
 
 /* .shrinked {
+  position: fixed;
   width: 90%;
   margin: auto;
+  top: 4rem;
+  right: 3rem;
 } */
 
 ul {
   white-space: nowrap;
   display: flex;
-  margin: 0.5rem;
+  font-size: smaller;
   padding: 0.5rem;
   justify-content: center;
 }
@@ -57,7 +58,6 @@ ul {
 li {
   padding: 1rem;
   list-style: none;
-  font-size: 1rem;
   height: 100%;
   display: inline-block;
   text-align: center;
@@ -105,9 +105,9 @@ nav li:hover {
   justify-content: center;
   align-items: center;
   position: fixed;
-  /* z-index: 99; */
-  top: 3%;
-  right: 2%;
+  cursor: pointer;
+  top: 1rem;
+  right: 3rem;
 }
 
 .menu-box div {
