@@ -70,6 +70,36 @@ nav a:hover {
   background-color: #383e4c;
   filter: brightness(120%);
 }
+
+
+/****************************************/
+/* Menu-box formatting: */
+
+.menu-box {
+  background-color: #383e4c;
+  border-radius: 0.2em;
+  border: 1px solid white;
+  width: 3.1rem;
+  display: flex;
+  padding: 0.5em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  /* z-index: 99; */
+  top: 3%;
+  right: 2%;
+}
+
+.menu-box div{
+  width: 80%;
+  border-radius: 0.2rem;
+  height: 0.2em;
+  margin: 0.1rem;
+  background-color: white;
+}
+
+
 /****************************************/
 
 /* Header section formatting: */
