@@ -272,7 +272,7 @@ hr {
   margin: auto;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-auto-flow: column;
+  grid-auto-flow: row;
 }
 
 /****************************************/
@@ -321,6 +321,10 @@ hr {
 input,
 textarea {
   padding: 0.6rem;
+  width: 100%;
+}
+
+.contact-content {
   width: 100%;
 }
 
@@ -561,14 +565,14 @@ footer {
 
 @media (min-width: 769px) and (max-width: 991px),
 (max-width: 767px) and (orientation: landscape) {
-  #testimonial-area {
-    width: 90%;
-    justify-content: space-between;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-  }
+#testimonial-area {
+  width: 90%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
 
-  #testimonial-area img {
-    height: 40%;
-  }
+#testimonial-area .feature-content {
+  height: 100%;
+}
 }
