@@ -12,7 +12,7 @@ navbar.addEventListener("click", function (e) {
   current.firstChild && current.classList.remove("selected");
   navbarElems.forEach((x) => {
     if (e.target == x.firstChild) {
-      return x.firstChild.classList.add("selected");
+      return x.classList.add("selected");
     }
   });
 });
