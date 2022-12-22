@@ -67,6 +67,13 @@ checkTablet.addEventListener("change", function (e) {
   }
 });
 
+// Launch function once at start:
+if (checkTablet.matches || checkPhone.matches) {
+  /* if media queries for small devices: */
+  changeNavDesign();
+} else {
+  turnBackNavDesign();
+}
 /* "Scrolling back up" events: */
 scrollBackButton.addEventListener("click", function () {
   document.body.scrollTop = 0; // For Safari
