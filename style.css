@@ -24,20 +24,27 @@ section {
 /* NAVIGATION BAR */
 
 nav {
-  /* display: flex; */
   background-color: #383e4c;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
 
+
 .shrinked {
   position: fixed;
-  width: 90%;
   margin: auto;
   top: 4rem;
   right: 3rem;
+  width: 90%;
+  transition:all 0.5s ease-in;
 }
+
+.hide {
+   opacity: 0;
+   height: 0 !important;
+   transition:all 0.5s ease-in;
+ }
 
 ul {
   white-space: nowrap;
@@ -573,10 +580,6 @@ footer {
 
   #blog-area {
     padding: 1rem;
-  }
-
-  nav {
-    display: none;
   }
 
   .menu-box {

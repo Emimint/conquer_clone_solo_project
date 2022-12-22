@@ -1,7 +1,7 @@
 "use strict";
 
 const navbar = document.querySelector("nav"); // regular navbar
-const menuBox = document.querySelector(".menu-box");// mobile navbar
+const menuBox = document.querySelector(".menu-box"); // mobile navbar
 const navList = document.querySelector("ul");
 const navbarElems = document.querySelectorAll(".nav_item");
 const scrollBackButton = document.querySelector(".fixed");
@@ -12,7 +12,6 @@ const checkTablet = window.matchMedia(
 );
 const checkPhone = window.matchMedia("only screen and (max-width: 480px)");
 
-
 /* Create mobile "Navbar" format: */
 const changeNavDesign = function (e) {
   navbar.classList.add("shrinked");
@@ -20,7 +19,8 @@ const changeNavDesign = function (e) {
   navbarElems.forEach((x) => {
     x.classList.add("menu-box-item");
   });
-  navbar.style.display = "none";
+  navbar.classList.add("hide");
+  navList.classList.add("hide");
 };
 
 /* Create regular "Navbar" format: */
@@ -30,16 +30,18 @@ const turnBackNavDesign = function (e) {
   navbarElems.forEach((x) => {
     x.classList.remove("menu-box-item");
   });
-  navbar.style.display = "block";
+  navbar.classList.remove("hide");
+  navList.classList.remove("hide");
 };
-
 
 /* Toogle mobile "Navbar" menu: */
 const switchOnOff = function (e) {
-  if (navbar.style.display === "none" || navbar.style.display === "") {
-    navbar.style.display = "block";
-  } else if (navbar.style.display === "block") {
-    navbar.style.display = "none";
+  if (navbar.getBoundingClientRect().height == 0) {
+    navbar.classList.remove("hide");
+    navList.classList.remove("hide");
+  } else if (navbar.getBoundingClientRect().height > 0) {
+    navbar.classList.add("hide");
+    navList.classList.add("hide");
   }
 };
 
@@ -52,6 +54,7 @@ navbar.addEventListener("click", function (e) {
       return x.classList.add("selected");
     }
   });
+  switchOnOff();
 });
 
 /* Menu-box interaction events: */
