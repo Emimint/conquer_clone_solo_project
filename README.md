@@ -18,20 +18,20 @@ Additionally, one of the requirements of the project was to create a responsive 
 Features
 ========
 
-    Classical homepage
-    ------------------
-    * the website is made of four big sections including contact form. Each section is linked to a navbar menu.
+Classical homepage
+------------------
+* the website is made of four big sections including contact form. Each section is linked to a navbar menu.
 
-    Dynamic navbar
-    --------------
+Dynamic navbar
+--------------
 * At a certain minimal width, the navbar is switched to a mobile format responding just the same. 
 
-    "scrolling back up" button
-    --------------------------
+"scrolling back up" button
+--------------------------
 * At a certain height within the page, a "scrolling back up" button appears and can be used to reach the top of the page.
 
-    Parallax effect
-    ---------------
+Parallax effect
+---------------
 * A special visual effect is used to enhance the aspect of the page (more info here: https://en.wikipedia.org/wiki/Parallax_scrolling).
 
 Running The Project
