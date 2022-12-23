@@ -45,16 +45,12 @@ const switchOnOff = function (e) {
   }
 };
 
-/* "Navbar" interaction event: */
-navbar.addEventListener("click", function (e) {
-  const current = document.querySelector(".selected"); // currently selected navbar link (default: Homepage)
-  current && current.classList.remove("selected");
-  navbarElems.forEach((x) => {
-    if (e.target == x) {
-      return x.classList.add("selected");
-    }
-  });
-  switchOnOff();
+/* Mobile "Navbar" interaction event: */
+navList.addEventListener("click", function (e) {
+  if (navList.classList.contains("nav_links")) {// if mobile navbar is displayed:
+    switchOnOff();
+  }
+ 
 });
 
 /* Menu-box interaction events: */
