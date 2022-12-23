@@ -173,7 +173,6 @@ h4 {
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
 }
 
@@ -226,7 +225,7 @@ h2 {
   padding: 0 1rem;
   text-align: left;
   margin-top: 1rem;
-  margin-bottom: 0.5 rem;
+  margin-bottom: 0.5rem;
 }
 
 p {
