@@ -1,16 +1,29 @@
 "use strict";
 
+/*************
+ * VARIABLES
+ *************/
+
+const screenRatio = 0.7 // value between 0 and 1 used to defined when the "Scrolling back up" button appear or disappear
+
+const allMenuSections = document.querySelectorAll('[id^="section"]'); // all four main section div elementss, i.e. div id="section1", div id="section2",...
+
 const navbar = document.querySelector("nav"); // regular navbar
 const menuBox = document.querySelector(".menu-box"); // mobile navbar
 const navList = document.querySelector("ul");
 const navbarElems = document.querySelectorAll(".nav_item");
+
 const scrollBackButton = document.querySelector(".fixed");
 const scrollBackButtonTop = scrollBackButton.getBoundingClientRect().top;
-const section1 = document.getElementById("section1");
+
 const checkTablet = window.matchMedia(
   "screen and (min-width: 480px) and (max-width: 767px)"
 );
 const checkPhone = window.matchMedia("only screen and (max-width: 480px)");
+
+/*************
+ * FUNCTIONS
+ *************/
 
 /* Create mobile "Navbar" format: */
 const changeNavDesign = function (e) {
@@ -45,18 +58,38 @@ const switchOnOff = function (e) {
   }
 };
 
-/* Mobile "Navbar" interaction event: */
+
+/*******************
+ * EVENT LISTENERS:
+ *******************/
+
+/* Mobile "Navbar" interaction: */
 navList.addEventListener("click", function (e) {
-  if (navList.classList.contains("nav_links")) {// if mobile navbar is displayed:
+  if (navList.classList.contains("nav_links")) {
+    // if mobile navbar is displayed:
     switchOnOff();
   }
- 
 });
 
-/* Menu-box interaction events: */
+/*  Current position tracker: */
+window.addEventListener("scroll", function (e) {
+  const current = document.querySelector(".selected"); // currently selected navbar link (default: Homepage)
+  allMenuSections.forEach((x, i) => {
+    if (
+      window.scrollY > x.offsetTop &&
+      window.scrollY <= x.offsetTop + x.offsetHeight
+    ) {
+      current.classList.remove("selected");
+      return navbarElems[i].classList.add("selected");
+    }
+  });
+});
 
+/* Menu-box interaction: */
 menuBox.addEventListener("click", switchOnOff);
 
+
+/* Navbar format verification: */
 checkTablet.addEventListener("change", function (e) {
   if (checkTablet.matches || checkPhone.matches) {
     /* if media queries for small devices: */
@@ -66,14 +99,15 @@ checkTablet.addEventListener("change", function (e) {
   }
 });
 
-// Launch function once at start:
+/* Launch navbar format listener at start:*/
 if (checkTablet.matches || checkPhone.matches) {
   /* if media queries for small devices: */
   changeNavDesign();
 } else {
   turnBackNavDesign();
 }
-/* "Scrolling back up" events: */
+
+/* "Scrolling back up": */
 scrollBackButton.addEventListener("click", function () {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
@@ -82,8 +116,8 @@ scrollBackButton.addEventListener("click", function () {
 /* "Scrolling back up" button animation: */
 window.onscroll = function () {
   if (
-    document.body.scrollTop > scrollBackButtonTop * 0.7 ||
-    document.documentElement.scrollTop > scrollBackButtonTop * 0.7
+    document.body.scrollTop > scrollBackButtonTop * screenRatio ||
+    document.documentElement.scrollTop > scrollBackButtonTop * screenRatio
   ) {
     scrollBackButton.classList.add("dimming"); // toggle opacity
   } else {
