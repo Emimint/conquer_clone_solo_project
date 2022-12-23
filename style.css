@@ -242,6 +242,7 @@ p > a {
 
 .general-link {
   align-self: center;
+  white-space: nowrap;
   border-radius: 5px;
   padding: 0.5em 1.5em;
   text-decoration: none;
